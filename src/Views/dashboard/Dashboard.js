@@ -51,10 +51,10 @@ const Dashboard = (props) => {
         <h1>What is your goal?</h1>
         <p>Please select one of the following options</p>
         <div className='dashboard__container__items'>
-          <Link to='/mortgages'>
+          <Link to='/mortgages' aria-label='Mortgages'>
             <CalculatorBlock title='Mortgages' icon={mortgageIcon} />
           </Link>
-          <Link to='/savings'>
+          <Link to='/savings' aria-label='Savings'>
             <CalculatorBlock title='Savings' icon={savingsIcon} />
           </Link>
         </div>
