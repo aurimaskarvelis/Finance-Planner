@@ -7,7 +7,7 @@ class SavingsForm extends Component {
         super(props);
         this.state = {
             mode: 'form',
-            propertyPrice: '',
+            savingsGoal: '',
             monthlyIncome: '',
             monthlyExpenditure: '',
             currentSavings: ''
@@ -52,7 +52,7 @@ class SavingsForm extends Component {
                 'Monthly Expenditures': formatCurrency(this.state.monthlyExpenditure),
                 'Your Savings': formatCurrency(this.state.currentSavings),
                 'Monthly Savings Amount': formatCurrency(this.state.monthlyIncome - this.state.monthlyExpenditure),
-                'Duration': (((this.state.savingsGoal / 100) * 5) - this.state.currentSavings) / (this.state.monthlyIncome - this.state.monthlyExpenditure)
+                'Duration': (this.state.savingsGoal - this.state.currentSavings) / (this.state.monthlyIncome - this.state.monthlyExpenditure)
             }
     
             this.setState({
