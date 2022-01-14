@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.830dcede.css",
+    "main.js": "/static/js/main.8ee5fbd3.js",
+    "static/media/money-bag.png": "/static/media/money-bag.e79df3b23ad406b3b2bb.png",
+    "static/media/logo.png": "/static/media/logo.7a969e5c74f161f7fc6f.png",
+    "static/media/home.png": "/static/media/home.e0fe0af761b15e94f199.png",
+    "index.html": "/index.html",
+    "main.830dcede.css.map": "/static/css/main.830dcede.css.map",
+    "main.8ee5fbd3.js.map": "/static/js/main.8ee5fbd3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.830dcede.css",
+    "static/js/main.8ee5fbd3.js"
+  ]
+}
