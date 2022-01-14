@@ -2,8 +2,11 @@
 # Cover
 
 *Aurimas Karvelis (306997)
+
 4karva50@gmail.com
+
 https://github.com/aurimaskarvelis/Finance-Planner
+
 https://financeplanner.herokuapp.com/*
 
   
