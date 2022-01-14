@@ -360,3 +360,15 @@ h6{
 .account__panel form input{
     display: block;
 }
+
+/*--- Media Queries ---*/
+
+@media(max-width:767px){
+    .dashboard__container__items{
+        flex-direction: column;
+    }
+
+    .dashboard__container__items .dashboard__container__item__block{
+        margin: 15px 0px;
+    }
+}
