@@ -43,7 +43,7 @@ function Join(props) {
         <input value={props.email} type='email' placeholder='email' name='email' />
         <input value={props.password} type='password' placeholder='password' name='password' />
         <input type='password' placeholder='repeat password' name='repeat_password' />
-        <input className='submit' type='submit' value='Sign In' />
+        <input className='submit' type='submit' value='Register' />
       </form>
     </div>
   );
