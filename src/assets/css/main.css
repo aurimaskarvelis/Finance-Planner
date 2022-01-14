@@ -1,0 +1,301 @@
+/*--- Base ---*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a,
+span,
+label,
+button{
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+}
+
+button,
+.form__submit{
+    width: 100%;
+    padding: 20px 0px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+input{
+    display: block;
+    height: 50px;
+    width: 50vw;
+    max-width: 400px;
+    padding: 20px;
+    margin: 10px 0px;
+}
+
+.submit{
+    margin-top: 20px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.mw{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    text-transform: uppercase;
+}
+
+#root{
+    height: 100vh;
+}
+
+.btn{
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+
+.btn.red-btn{
+    background: #e55039;
+    color: #fff;
+}
+
+/*--- Header ---*/
+
+.header{
+    position: fixed;
+    width: 100%;
+    background: #f1f1f1;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header__container .header__container--logo img{
+    height: 70px;
+}
+
+.header__container--access a{
+    text-decoration: none;
+    margin: 0px 20px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+.header__container--access a:last-child{
+    margin-right: 0px;
+}
+
+/*--- Dashboard ---*/
+
+.dashboard__container{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dashboard__container__items{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.dashboard__container__items a{
+    margin: 0px 15px;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #000;
+}
+
+.dashboard__container__item__block{
+    background: #f1f1f1;
+    border-radius: 3px;
+    border: 1px solid rgb(221, 221, 221);
+    min-width: 250px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0);
+}
+
+.dashboard__container__item__block:hover img{
+    transform: scale(1.1);
+}
+
+.dashboard__container__item__block:hover{
+    border: 1px solid rgb(190, 190, 190);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard__container__item__block img{
+    height: 100px;
+    width: auto;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+.dashboard__information{
+    padding: 40px 0px;
+    min-height: 100vh;
+}
+
+.dashboard__information h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dashboard__information__container{
+    display: flex;
+    flex-direction: column;
+}
+
+/*--- Accordions ---*/
+
+.accordion{
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.accordion__container{
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.accordion__container .accordion__container__header{
+    cursor: pointer;
+    padding: 25px 20px;
+    box-shadow: 15px 5px 15px rgba(0, 0, 0, 0.03);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion__container__header--toggle{
+    font-size: 22.5px;
+}
+
+.accordion__container .accordion__container__content p{
+    padding: 35px 20px;
+}
+
+/*--- Calculator ---*/
+
+.calculator{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.calculator h1{
+    text-align: center;
+}
+
+.calculator__form{
+    margin: 0px auto;
+}
+
+.calculator__form label{
+    display: block;
+    margin: 20px 0px 0px
+}
+
+.calculator__form__results{
+    margin: 20px 0px;
+}
+
+.calculator__form__results table{
+    border: 1px solid #f1f1f1;
+    border-spacing: 0px;
+}
+
+.calculator__form__results td{
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.calculator__form__results td:last-child{
+    text-align: center;
+}
+
+.calculator__form__results tr{
+    display: block;
+    border-bottom: 1px solid #333;
+}
+
+.calculator__form__results tr:last-child{
+    border-bottom: none;
+    background: #f1f1f1
+}
+
+.calculator__form__results p span{
+    border-bottom: 2px dotted red;
+}
+
+.calculator__form__results button{
+    margin: 20px 0px 0px 0px;
+}
+
+/*--- Login/Logout ---*/
+
+.account__panel,
+.logout{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.logout{
+    text-align: center;
+}
+
+.logout button{
+    margin: 35px auto 0px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.account__panel{
+    text-align: center;
+}
+
+.account__panel form{
+    width: auto;
+    margin: 20px auto 0px;
+}
+
+.account__panel form input{
+    display: block;
+}
