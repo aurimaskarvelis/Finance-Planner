@@ -18,7 +18,14 @@ The aim of this application is to allow students to visualise and plan their sav
 
 The choice of development methodology for this project has been the Waterfall approach. The reasoning behind this choice is the ability to have linear progress with clear steps on how to accomplish the end goal, this has been ideal for this scenario as each step has to be completed before moving on to the next.
 
-  
+  The stages of this methodology are the following:
+- Requirements
+- Analysis
+- Design
+- Coding
+- Operations
+
+The downside of using the waterfall methodology is that due to the step-by-step process, the client feedback is essentially ignored as it is provided too late in the development cycle, this makes testing a bit more difficult. 
 
 Following the coding/implementation stage of the methodology, I’ve created some simple forms which allowed me to receive user feedback on the application.
 
