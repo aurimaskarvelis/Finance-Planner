@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ResultsTable from './ResultsTable';
 import CurrencyInput from 'react-currency-input-field';
 
-class MortgageForm extends Component {
+class SavingsForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -31,7 +31,7 @@ class MortgageForm extends Component {
         const target = this.state;
         let status = true;
 
-        if (!target.propertyPrice) { status = false; }
+        if (!target.savingsGoal) { status = false; }
         if (!target.monthlyIncome) { status = false; }
         if (!target.monthlyExpenditure) { status = false; }
 
@@ -47,14 +47,12 @@ class MortgageForm extends Component {
 
         if(status === true){
             const results = {
-                'Property Price': formatCurrency(this.state.propertyPrice),
-                'Deposit Percentage': "5%",
-                'Deposit Amount': formatCurrency((this.state.propertyPrice / 100) * 5),
+                'Savings Goal': formatCurrency(this.state.savingsGoal),
                 'Monthly Income': formatCurrency(this.state.monthlyIncome),
                 'Monthly Expenditures': formatCurrency(this.state.monthlyExpenditure),
                 'Your Savings': formatCurrency(this.state.currentSavings),
                 'Monthly Savings Amount': formatCurrency(this.state.monthlyIncome - this.state.monthlyExpenditure),
-                'Duration': (((this.state.propertyPrice / 100) * 5) - this.state.currentSavings) / (this.state.monthlyIncome - this.state.monthlyExpenditure)
+                'Duration': (((this.state.savingsGoal / 100) * 5) - this.state.currentSavings) / (this.state.monthlyIncome - this.state.monthlyExpenditure)
             }
     
             this.setState({
@@ -86,11 +84,11 @@ class MortgageForm extends Component {
                 {this.state.mode === 'form' && (
                     <form onSubmit={this.handleSubmit}>
                         <label>
-                        Property Price:
+                        What is your savings goal:
                         <CurrencyInput
                             intlConfig={{ locale: 'en-US', currency: 'GBP' }}
-                            name='propertyPrice'
-                            value={this.state.propertyPrice}
+                            name='savingsGoal'
+                            value={this.state.savingsGoal}
                             onValueChange={(value, name) => this.handleChange(value, name)}
                         />
                         </label>
@@ -130,4 +128,4 @@ class MortgageForm extends Component {
     }
 }
 
-export default MortgageForm;
+export default SavingsForm;
